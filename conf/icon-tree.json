@@ -1,0 +1,18 @@
+[
+	{
+		"icon-id" : "bio",
+		"icon-name" : "バイオリズム",
+		"icon-link" : "bio/index.html",
+		"icon-color" : "bio-icon.png",
+		"icon-kind" : "url",
+		"icon-pay" : "free"
+	},
+	{
+		"icon-id" : "custmer",
+		"icon-name" : "会員情報検索",
+		"icon-link" : "cust/index.html",
+		"icon-color" : "cust-icon.png",
+		"icon-kind" : "url",
+		"icon-pay" : "payd"
+	}
+]

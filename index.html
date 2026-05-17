@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>算命学アプリログイン画面</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sprintf/1.1.2/sprintf.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/i18n/jquery.ui.datepicker-ja.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#login-overlay").hide(); // 初期は非表示
+			});
+		</script>
+	</head>
+	<body>
+		<div class="ipad-container">
+			<div class="homescreen">
+			
+				<!-- 無料サービス -->
+				<div class="icon free-service" data-app="bio">
+					<div class="icon-box" style="background: linear-gradient(#5AC8FA, #7ac1f8);">
+						<img src="img/bio-icon.png" style="width: 80px; height: 80px;"></img>	
+					</div>
+					<p>バイオリズム</p>
+				</div>
+				<!-- 会員専用サービス（鍵マーク付き） -->
+				<div class="icon premium-service" id="search" data-app="Member-Only">
+					<div class="icon-box" style="background: linear-gradient(#ac6af2, #d7b9f7);">
+						<img src="img/srch-icon.png" style="width: 80px; height: 80px;"></img>
+						<span class="lock-tag">🔒</span>
+					</div>
+					<p>会員情報検索</p>
+				</div>
+				<!-- 会員専用サービス（鍵マーク付き） -->
+				<div class="icon premium-service" id="sanmei" data-app="Member-Only">
+					<div class="icon-box" style="background: linear-gradient(#97f98f, #cafbc5);">
+						<img src="img/san-icon.png" style="width: 80px; height: 80px;"></img>
+						<span class="lock-tag">🔒</span>
+					</div>
+					<p>算命学アプリ</p>
+				</div>
+				<!-- ログイン用アイコン -->
+			<!--
+				<div class="icon login-trigger" id="login-icon">
+					<div class="icon-box" style="background: linear-gradient(#97f98f, #cafbc5);">
+						<img src="img/login-icon.png" style="width: 80px; height: 80px;"></img>
+					</div>
+					<p>ログイン</p>
+				</div>
+			-->
+			</div>
+		</div>
+
+<!-- ログイン用モーダル（初期は非表示） -->
+		<div id="login-overlay" class="overlay">
+			<div class="login-card">
+				<h2>Login</h2>
+				<input type="text" id="user-id" placeholder="ユーザーID">
+				<input type="password" id="pass" placeholder="パスワード">
+				<button id="do-login">ログイン</button>
+				<button class="close-btn">キャンセル</button>
+			</div>
+		</div>
+	</body>
+</html>

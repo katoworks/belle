@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>算命学アプリログイン画面</title>
+		<link rel="stylesheet" href="css/san1.css">
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sprintf/1.1.2/sprintf.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/i18n/jquery.ui.datepicker-ja.js"></script>
+		<script src="js/bio.js"></script>
+		<script type="text/javascript">
+
+		</script>
+	</head>
+	<body>
+		<h2 id="top">バイオリズム</h2>
+		<div class="container" id="page0">
+		<div class="item">
+		<table width="100%">
+			<tr>
+				<td width="100%" id="Brd">　誕生日：<input type="text" id="datepicker" style="font-size: 20px;vertical-align: middle;"></td>
+			</tr>
+			<tr>
+				<td width="100%" id="nmd">　氏　名：<input type="text" id="name" style="font-size: 20px;vertical-align: middle;"></td>
+			</tr>
+		</table>
+		<input type="button" id="btn" value="バイオリズムを表示" onclick="drawBiorhythm();">
+		<input type="button" id="rtn" value="トップに戻る" onclick="location.href='../index.html';">
+		<div class="bio" id="bio">
+			<h3 id="mychart">あなたのバイオリズム</h2>
+			<canvas id="biorhythmChart" class="biorhythmChart" width="500" height="300"></canvas>
+		</div>
+	</body>
+</html>

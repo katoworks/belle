@@ -1,0 +1,115 @@
+/**
+  *
+  * 算命学用CSS
+  *
+  **/
+html{
+	touch-action: manipulation;
+}
+body{
+	background-color:rgb(248, 248, 219);
+	width:100vw;
+}
+h1{
+	text-align: center;
+}
+h2#top{
+	text-align: left;
+	background-color: saddlebrown;
+	color:white;
+}
+label{
+	font-size: 20px;
+}
+#myh1{
+	font-size: 20px;
+}
+.birth{
+	outline: solid 1px #000;
+}
+table.in{
+	border-collapse: collapse;
+	margin-top:20px;
+	font-size: small;
+	border-width: 0.1px;
+}
+table.in td { border: 1px solid #000000; background:rgb(255, 255, 236); padding: 4px;font-size: small;}
+table.in th { border: 1px solid #020202; background:rgb(180, 236,  236); padding: 4px;font-size: small;}
+table.no{
+	border-collapse: collapse;
+	border-width: 0.1px solid black;
+}
+table.no td { border: none; background:rgb(255,255,236); padding: 4px;text-align: lft;}
+
+#Brd{
+	border: 1px solid black;
+	font-size: 25px;
+	background-color: rgb(180, 236, 236);
+	text-align: left;
+}
+#nmd{
+	border: 1px solid black;
+	font-size: 25px;
+	background-color: rgb(238, 217, 185);
+	text-align: left;
+}
+#ena{
+	border: 1px solid black;
+	font-size: 25px;
+	background-color: rgb(198, 247, 194);
+	text-align: left;
+}
+.in{
+	border: 1px solid black;
+	font-size:smaller;
+}
+.in2{
+	border: 1px solid black;
+	font-size:smaller;
+}
+th{
+	background-color: rgb(180, 236, 236);
+}
+td{
+	border-collapse: collapse;
+	border-width: 0.1px;
+	height:40px;
+	font-size: 20px;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item {
+	width: 400px;
+}
+
+/* Fototer用CSS */
+.cta {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(213, 226, 241);
+	border-top: 3px solid #f30d44;
+	z-index: 2;
+}
+.cta_area {
+	padding: 0 30px;
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
+}
+.cta_box {
+	display: flex;
+	justify-content: center;
+}
+
+#biorhythmChart{
+	margin-top:20px;
+	text-align:center;
+	background-color: rgb(164, 240, 168);
+
+}
