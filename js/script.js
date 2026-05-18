@@ -31,11 +31,8 @@ $(document).ready(function() {
 				case 'bio':
 					window.location.href = 'bio/bio.html';
 					break;
-				case 'search':
-					window.location.href = 'search/search.html';
-					break;
-				case 'sanmei':
-					window.location.href = 'sanmei/sanmei.html';
+				case 'runo':
+					window.location.href = 'runo/runo.html';
 					break;
 				default:
 					alert('アプリが見つかりませんでした。');
@@ -45,6 +42,10 @@ $(document).ready(function() {
 
 	// ログイン処理（シミュレーション）
 	$('#do-login').on('click', function() {
+		// ページ読み込み時にログイン状態を確認
+		checkStatus();
+		
+
 		isLoggedIn = true;
 		alert('ログインに成功しました！');
 		$('#login-overlay').fadeOut(300);
@@ -58,4 +59,17 @@ $(document).ready(function() {
 	$('.close-btn').on('click', function() {
 		$('#login-overlay').fadeOut(300);
 	});
+
+	function checkStatus() {
+		$.getJSON('check_session.php', function(data) {
+			if (data.isLoggedIn) {
+				$('#login-section').addClass('hidden');
+				$('#main-section').removeClass('hidden');
+				$('#user-name-display').text(data.userName);
+			} else {
+				$('#login-section').removeClass('hidden');
+				$('#main-section').addClass('hidden');
+			}
+		});
+	}
 });
